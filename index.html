@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorphoMob Jets - Luxury Private Jet Charter</title>
+    <meta name="description" content="Experience seamless global mobility with our white-glove private jet charter services. Luxury air travel redefined.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MorphoMob Jets</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/booking.html" class="nav-link">Book a Flight</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/fleet.html" class="nav-link">Fleet</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="images/jets/hero-jet-1.jpg" alt="Luxury Private Jet" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Luxury Jet Flights</h1>
+                <p class="hero-subtitle">Experience seamless global mobility with our white-glove private jet charter services</p>
+            </div>
+            
+            <!-- Booking Form -->
+            <div class="booking-form-container">
+                <form class="booking-form" id="heroBookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="from">From:</label>
+                            <input type="text" id="from" name="from" placeholder="Departure city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="to">To:</label>
+                            <input type="text" id="to" name="to" placeholder="Destination" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="depart-date">Depart date:</label>
+                            <input type="date" id="depart-date" name="depart-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="return-date">Return date:</label>
+                            <input type="date" id="return-date" name="return-date">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="passengers">Passengers:</label>
+                            <select id="passengers" name="passengers" required>
+                                <option value="">Select passengers</option>
+                                <option value="1">1 Passenger</option>
+                                <option value="2">2 Passengers</option>
+                                <option value="3">3 Passengers</option>
+                                <option value="4">4 Passengers</option>
+                                <option value="5">5 Passengers</option>
+                                <option value="6+">6+ Passengers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="book-btn">
+                                Book Now <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Last Offers Section -->
+    <section class="last-offers">
+        <div class="container">
+            <h2 class="section-title">Last Offers</h2>
+            <p class="section-subtitle">Check out our most attractive offers</p>
+            
+            <div class="offers-grid">
+                <div class="offer-card main-offer">
+                    <div class="offer-content">
+                        <h3>Join our Cabin Crew</h3>
+                        <p>Become part of our elite team and experience luxury aviation from the inside</p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                    <div class="offer-image">
+                        <img src="images/team/cabin-crew.jpg" alt="Cabin Crew">
+                    </div>
+                </div>
+                
+                <div class="offer-card secondary-offer">
+                    <div class="offer-content">
+                        <h3>Get discount next flights with CC</h3>
+                        <p>Exclusive member benefits and special pricing for frequent flyers</p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                    <div class="cc-logo">CC</div>
+                </div>
+                
+                <div class="offer-card secondary-offer">
+                    <div class="offer-content">
+                        <h3>Exclusive new offers</h3>
+                        <p>Limited time deals on luxury destinations and premium services</p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                    <div class="offer-image">
+                        <img src="images/jets/cabin-interior-2.jpg" alt="Luxury Interior">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Destinations Section -->
+    <section class="top-destinations">
+        <div class="container">
+            <h2 class="section-title">Top Destinations</h2>
+            <p class="section-subtitle">Discover our most popular luxury destinations</p>
+            
+            <div class="destinations-carousel">
+                <div class="destinations-container">
+                    <div class="destination-card" data-destination="dubai">
+                        <div class="destination-image">
+                            <img src="images/destinations/dubai.jpg" alt="Dubai">
+                            <div class="destination-overlay">
+                                <h3>Dubai</h3>
+                                <p>Experience luxury in the heart of the Middle East</p>
+                                <a href="pages/destinations.html#dubai" class="explore-btn">Explore</a>
+                            </div>
+                        </div>
+                        <div class="destination-info">
+                            <h4>Dubai</h4>
+                            <p>United Arab Emirates</p>
+                            <div class="destination-stats">
+                                <span><i class="fas fa-clock"></i> 6h 30m</span>
+                                <span><i class="fas fa-thermometer-half"></i> 32°C</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card" data-destination="monaco">
+                        <div class="destination-image">
+                            <img src="images/destinations/monaco.jpg" alt="Monaco">
+                            <div class="destination-overlay">
+                                <h3>Monaco</h3>
+                                <p>Glamour and sophistication on the French Riviera</p>
+                                <a href="pages/destinations.html#monaco" class="explore-btn">Explore</a>
+                            </div>
+                        </div>
+                        <div class="destination-info">
+                            <h4>Monaco</h4>
+                            <p>French Riviera</p>
+                            <div class="destination-stats">
+                                <span><i class="fas fa-clock"></i> 2h 15m</span>
+                                <span><i class="fas fa-thermometer-half"></i> 24°C</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card" data-destination="aspen">
+                        <div class="destination-image">
+                            <img src="images/destinations/aspen.jpg" alt="Aspen">
+                            <div class="destination-overlay">
+                                <h3>Aspen</h3>
+                                <p>World-class skiing and mountain luxury</p>
+                                <a href="pages/destinations.html#aspen" class="explore-btn">Explore</a>
+                            </div>
+                        </div>
+                        <div class="destination-info">
+                            <h4>Aspen</h4>
+                            <p>Colorado, USA</p>
+                            <div class="destination-stats">
+                                <span><i class="fas fa-clock"></i> 8h 45m</span>
+                                <span><i class="fas fa-thermometer-half"></i> 5°C</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card" data-destination="maldives">
+                        <div class="destination-image">
+                            <img src="images/destinations/maldives.jpg" alt="Maldives">
+                            <div class="destination-overlay">
+                                <h3>Maldives</h3>
+                                <p>Tropical paradise with overwater luxury</p>
+                                <a href="pages/destinations.html#maldives" class="explore-btn">Explore</a>
+                            </div>
+                        </div>
+                        <div class="destination-info">
+                            <h4>Maldives</h4>
+                            <p>Indian Ocean</p>
+                            <div class="destination-stats">
+                                <span><i class="fas fa-clock"></i> 9h 20m</span>
+                                <span><i class="fas fa-thermometer-half"></i> 29°C</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Jet for VIP Clients Section -->
+    <section class="vip-jet-section">
+        <div class="container">
+            <div class="vip-content">
+                <div class="vip-text">
+                    <h2>New Jet for VIP Clients</h2>
+                    <p class="vip-subtitle">Meet our newest addition to the fleet</p>
+                    <p class="vip-description">
+                        Experience unparalleled luxury with our latest Gulfstream G700, featuring 
+                        state-of-the-art technology, spacious cabins, and the highest safety standards. 
+                        Perfect for long-range flights with maximum comfort and style.
+                    </p>
+                    <div class="vip-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Up to 14 passengers</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-globe"></i>
+                            <span>7,500 nm range</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wifi"></i>
+                            <span>High-speed internet</span>
+                        </div>
+                    </div>
+                    <a href="pages/fleet.html" class="learn-more-btn">Learn More</a>
+                </div>
+                <div class="vip-image">
+                    <img src="images/jets/vip-jet.jpg" alt="VIP Jet">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-content">
+                <div class="faq-image">
+                    <img src="images/team/concierge-1.jpg" alt="Customer Service">
+                </div>
+                <div class="faq-text">
+                    <h2>FAQ</h2>
+                    <p class="faq-subtitle">Get answers to common questions</p>
+                    
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What drinks and food served on board the aircraft?</h3>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer premium catering options including gourmet meals, fine wines, 
+                                champagne, and specialty beverages. All dietary requirements and preferences 
+                                can be accommodated with advance notice.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How much time will I save on a charter flight?</h3>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Charter flights typically save 2-4 hours compared to commercial flights 
+                                due to reduced check-in times, no layovers, access to smaller airports, 
+                                and flexible scheduling.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Can I cancel my flight?</h3>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, flights can be cancelled according to our flexible cancellation policy. 
+                                Terms vary depending on the notice period and specific charter agreement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why MorphoMob Jets?</h2>
+            <p class="section-subtitle">Experience the difference of true luxury aviation</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety First</h3>
+                    <p>Our pilots and crew are rigorously trained with the highest safety standards in the industry.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Luxury Comfort</h3>
+                    <p>Convenient, scheduled jet card programs from luxury private jet charter professionals.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time Efficiency</h3>
+                    <p>On-demand jet ownership experience from luxury private jet charter professionals.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock premium support from luxury private jet charter professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to our newsletter</h2>
+                <p>Stay updated with exclusive offers and travel insights</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MorphoMob Jets</h3>
+                    <p>Redefining luxury air travel with seamless global mobility and white-glove private jet charter services.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/fleet.html">Our Fleet</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="pages/booking.html">Charter Flights</a></li>
+                        <li><a href="pages/destinations.html">Destinations</a></li>
+                        <li><a href="pages/events.html">Events</a></li>
+                        <li><a href="#">Jet Cards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MorphoMob Jets. All rights reserved.</p>
+                <p>Crafted with excellence in luxury aviation</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
